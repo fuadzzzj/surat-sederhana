@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Surat sederhana - Mufti Sofwan Fuad to Raisa Ajeng Filliana">
+  <title>Surat sederhana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Langsung ke konten</a>
+
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-brand">
+        <span class="brand-icon">⚓</span>
+        <h1 class="brand-title">Mufti Sofwan Fuad</h1>
+      </div>
+      <div class="navbar-menu">
+        <button id="nav-beranda" class="nav-link active" onclick="showPage('beranda')">Beranda</button>
+        <button id="nav-profil" class="nav-link" onclick="scrollToSection('profil-section')">Surat</button>
+        <button id="nav-fasilitas" class="nav-link" onclick="scrollToSection('fasilitas-section')">Foto-foto</button>
+      </div>
+      <button class="navbar-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <i data-lucide="menu" class="icon-menu"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <button class="mobile-link" onclick="showPage('beranda'); closeMobileMenu()">Beranda</button>
+      <button class="mobile-link" onclick="scrollToSection('profil-section'); closeMobileMenu()">Surat</button>
+      <button class="mobile-link" onclick="scrollToSection('fasilitas-section'); closeMobileMenu()">Foto-foto</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div id="page-beranda" class="page active">
+      <header class="hero">
+        <img class="hero-image" src="fuad kecil.jpg" alt="Foto Kapal Perkapalan" loading="eager">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h2 class="hero-title">Surat sederhana via web aja ya</h2>
+          <p class="hero-subtitle"><strong>untuk ajeng</strong> maap ya surat nya lewat web aja, soal nya tulisan gw kayak mirip ceker ayam gitu</p>
+          <a class="btn btn-primary btn-lg" href="https://www.instagram.com/fuadzzzj/">kalo mau dm gw</a>
+        </div>
+
+        <button class="hero-scroll" type="button" onclick="scrollToSection('profil-section')" aria-label="Lihat profil">
+          <i data-lucide="chevron-down" class="scroll-icon"></i>
+        </button>
+      </header>
+
+      <section id="profil-section" class="section section-profil">
+        <div class="container grid-2">
+          <div class="profil-content fade-in">
+            <span class="section-label">bismillahirrahmanirrahim</span>
+            <h2 class="section-title">maap ya kemaren gw ngomong jutek</h2>
+            <p class="section-text" style="color: white;"><strong style="color: white;"> sebelum itu di sarankan pake lp karna gw ngoding dan view nya di lp, kalo pake hp gk papasihh,. </strong>sebenarnya gw ngomong jutek mungkin karna kita jarang ngobrol gitu, jujur gw juga kalo mau nyapa tuh kayak malu gitu dahh, padahal kan kewajiban muslim atas muslim lainnya menjawab salam gw pengen salam ke lu tapi <strong>akhhh maluuu</strong></p>
+            <p class="section-text"style="color: white;">jadi kalo gw nyapa jawab yaaa, jawabnya harus extrovert gitu lah jangan sok introvert luu, kayak kemarem di rm opmaz gw mau nyapa tapi lu kayak introvert gitu jadi malu kann</p>
+            <div class="profil-stats">
+              <div class="stat-item">
+              </div>
+            </div>
+          </div>
+          <div class="profil-image-wrapper fade-in delay-200">
+            <img src="IMG-20250409-WA0056.jpg" style="height: 300px;">
+            <div class="image-badge">
+              <i data-lucide="award" class="badge-icon"></i>
+              <span>numpang naro foto ye</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fasilitas-section" class="section section-fasilitas">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-label">foto foto</span>
+            <h2 class="section-title">apa aja yang di pikiran gw</h2>
+            <p class="section-desc">mungkin agak random foto foto yang gw taro tapi izinn yaahh.</p>
+          </div>
+          <div class="grid-3">
+            <article class="card card-fasilitas fade-in">
+              <div class="card-image">
+                <img src="20210077.JPG" style="height: 560px;">
+                <div class="card-overlay"></div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Hayolohhh tebak ini foto siapa</h3>
+                <p class="card-desc">Jas nya ada tulisan RAF</p>
+                <p class="card-desc">maap maap, gk lagi lagi deh insyallah</p>
+              </div>
+            </article>
+            <article class="card card-fasilitas fade-in delay-100">
+              <div class="card-image">
+                <img src="WIN_20260603_06_44_26_Pro.jpg" style="height: 260px;">
+                <div class="card-overlay"></div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">jujur bingung mau nulis apa lagii</h3>
+                <p class="card-desc">jujur udh ngantuk juga nih udh malemm, tapi sabarr lagi ngeluarin pikiran <strong>semangatt!!</strong></p>
+              </div>
+            </article>
+            <article class="card card-fasilitas fade-in delay-200">
+              <div class="card-image">
+                <img src="sok imut (emang imut sih).jpg" style="height: 300px;">
+                <div class="card-overlay"></div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">maap ya masih nyimpen foto ini, nanti di hapus dehh</h3>
+                <p class="card-desc">BTW vidio colab membasuh tadi enak juga yakkk, emang gitar nya kren sihhhh, sama yang nyanyi juga mantap nyakk</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <span class="brand-icon">⚓</span>
+            <h3>udh sih segitu aja yakk maap dikit</h3>
+            <p class="footer-desc">susah mikir jernih nihh euyyy, udh jam 12 lagi, bentar lagi lulus jangan di rumah muluu (maap kalo nyinggung), ohiya kalo lu ada cerita bisa kok ngobrol sama gw langsung atau wa ig gmail semuanya bisaa tapi ada pilihan nya jugakk</p>
+          </div>
+          <div class="footer-links">
+            <h4>Menu Utama</h4>
+            <ul>
+              <li><a >cerita pendek + biasa = gratis dehhh</a></li>
+              <li><a >cerita panjang + butuh bantuan = tergantung mood gw harga nya</a></li>
+              <li><a >Cerita tentang orang gk diterima takut gibah</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontak</h4>
+            <ul>
+              <li><i data-lucide="map-pin" class="contact-icon"></i> Ma'had Al-zaytun, indramayu, indonesia</li>
+              <li><i data-lucide="phone" class="contact-icon"></i> (+62) 8131 3027 221</li>
+              <li><i data-lucide="mail" class="contact-icon"></i> fuadzzj@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>2020210461 Mufti Sofwan Fuad. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
